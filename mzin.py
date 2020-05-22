@@ -15,7 +15,7 @@ table_array = table_text.splitlines()
 #clean up the table text.
 cleaned_array = table_array[14:]
 
-
+#todo: up to this part
 def get_next_castaway(array):
     clean = array[0:3]
     print(clean)
