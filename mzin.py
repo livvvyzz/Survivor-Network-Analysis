@@ -8,7 +8,7 @@ soup = BeautifulSoup(website_url,'lxml')
 ##print(soup.prettify())
 
 My_table = soup.find('table',{'class':'wikitable article-table'})
-#print(My_table)
+##print(My_table)
 
 table_text = My_table.get_text()
 table_array = table_text.splitlines()
@@ -40,8 +40,8 @@ while len(cleaned_array) > pointer:
         num_index = re.search(r"\d", name_age)
         name = name_age[0:num_index.start()]
         age = name_age[num_index.start():]
-        #print(name)
-        #print(age)
+        print(name)
+        print(age)
 
 
 #create the table of castaway info
